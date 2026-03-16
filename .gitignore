@@ -28,3 +28,4 @@ pnpm-debug.log*
 .obsidian/workspace-mobile.json
 .obsidian/plugins/
 .obsidian/cache
+.trash/
