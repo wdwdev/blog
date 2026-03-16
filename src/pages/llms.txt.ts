@@ -12,6 +12,8 @@ export const GET: APIRoute = async (context) => {
 		``,
 		`> ${SITE_DESCRIPTION}`,
 		``,
+		`- [Full content](${new URL('/llms-full.txt', context.site)}): Complete markdown of all blog posts`,
+		``,
 		`## Blog Posts`,
 		...posts.map((post) => {
 			const title = post.data.title || post.id.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
