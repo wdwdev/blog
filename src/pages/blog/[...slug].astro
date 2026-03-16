@@ -15,6 +15,6 @@ const post = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BlogPost {...post.data}>
+<BlogPost {...post.data} title={post.data.title || post.id.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}>
 	<Content />
 </BlogPost>
